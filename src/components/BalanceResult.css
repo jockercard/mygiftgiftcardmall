@@ -1,0 +1,79 @@
+.balance-result {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.balance-result.success {
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.balance-result.error {
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.result-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.balance-result.success .result-icon {
+  background: var(--color-success);
+  color: var(--color-bg);
+}
+
+.balance-result.error .result-icon {
+  background: var(--color-error);
+  color: white;
+}
+
+.balance-result h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.balance-amount {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.balance-amount .currency {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.balance-amount .amount {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.balance-result.success .amount {
+  color: var(--color-success);
+}
+
+.card-info,
+.card-network {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+.error-message {
+  font-size: 0.9375rem;
+  color: var(--color-error);
+}
