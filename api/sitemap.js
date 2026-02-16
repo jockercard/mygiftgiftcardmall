@@ -26,13 +26,8 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
 </urlset>`;
 
-export const config = { runtime: 'edge' };
-
-export default function handler(req) {
-  return new Response(SITEMAP_XML, {
-    headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'no-cache, no-store, must-revalidate',
-    },
-  });
+export default function handler(req, res) {
+  res.setHeader('Content-Type', 'application/xml');
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.status(200).send(SITEMAP_XML);
 }
