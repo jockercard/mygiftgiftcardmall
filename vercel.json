@@ -5,9 +5,12 @@
   "framework": null,
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
-    { "source": "/faq", "destination": "/faq/index.html" },
+    { "source": "/faqs", "destination": "/faqs/index.html" },
+    { "source": "/how-it-works", "destination": "/how-it-works/index.html" },
     { "source": "/contact", "destination": "/contact/index.html" },
-    { "source": "/learnmore", "destination": "/learnmore/index.html" }
+    { "source": "/check-balance", "destination": "/check-balance/index.html" },
+    { "source": "/faq", "destination": "/faqs/index.html" },
+    { "source": "/learnmore", "destination": "/how-it-works/index.html" }
   ],
   "headers": [
     {

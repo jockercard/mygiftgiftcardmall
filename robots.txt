@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Allow: /check-balance
+Allow: /faqs
+Allow: /how-it-works
+Allow: /contact
+Disallow: /api/
 
-Sitemap: https://www.yourrewarrdcard.com/sitemap.xml
+Sitemap: https://www.mygiftgiftcardmall.shop/sitemap.xml

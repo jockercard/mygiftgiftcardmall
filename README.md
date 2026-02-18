@@ -1,11 +1,11 @@
-# Your Reward Card
+# MyGiftGiftCardMall
 
-Reward card balance checker at **yourrewarrdcard.com**.
+Gift card balance checker at **mygiftgiftcardmall.shop**.
 
 ## Live site
 
-- **https://www.yourrewarrdcard.com**
-- Hosted on Vercel, deployed from GitHub (`gccheck-balance/Yourrewardcard`, branch `main`).
+- **https://www.mygiftgiftcardmall.shop**
+- Hosted on Vercel, deployed from GitHub (`gccheck-balance/mygiftgiftcardmall`, branch `main`).
 
 ## Project structure
 

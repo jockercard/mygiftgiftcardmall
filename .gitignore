@@ -4,5 +4,6 @@ dist/
 .env.local
 *.log
 .DS_Store
+MyGiftGiftCardMall_files/
 Your Reward Card_files/
 package-lock.json
